@@ -1,0 +1,6 @@
+# OS X
+.DS_Store
+.*.swp
+node_modules
+plugins
+platforms
