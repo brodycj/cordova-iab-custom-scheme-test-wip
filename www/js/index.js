@@ -40,6 +40,28 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
+
+        var myref = cordova.InAppBrowser.open('iabpage.html');
+
+        myref.addEventListener('loadstart', function(e) {
+            console.log('received loadstart for URL: ' + e.url);
+            alert('received loadstart for URL: ' + e.url);
+        });
+
+        myref.addEventListener('loadstop', function(e) {
+            console.log('received loadstop for URL: ' + e.url);
+            alert('received loadstop for URL: ' + e.url);
+        });
+
+        myref.addEventListener('customscheme', function(e) {
+            console.log('received custom scheme request for URL: ' + e.url);
+            alert('received custom scheme request for URL: ' + e.url);
+        });
+
+        myref.addEventListener('loaderror', function(e) {
+            console.log('load error with message: ' + e.message);
+            alert('load error with message: ' + e.message);
+        });
     }
 };
 
