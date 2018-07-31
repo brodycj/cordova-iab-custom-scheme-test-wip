@@ -24,7 +24,7 @@
     </platform>
     <allow-intent href="myscheme:*" />
     <allow-navigation href="myscheme:*" />
-    <plugin name="cordova-plugin-inappbrowser" spec="^3.0.0" />
     <plugin name="cordova-plugin-whitelist" spec="^1.3.3" />
     <preference name="AllowedSchemes" value="myscheme" />
+    <plugin name="cordova-plugin-inappbrowser" spec="https://github.com/q-m/cordova-plugin-inappbrowser#feature/allowedschemes-ios" />
 </widget>
