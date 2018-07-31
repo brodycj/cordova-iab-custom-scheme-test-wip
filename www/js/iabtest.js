@@ -32,7 +32,7 @@ document.getElementById('test2').onclick = function() {
 };
 
 document.getElementById('test3').onclick = function() {
-    console.log('start custom scheme test 2');
+    console.log('start custom scheme test 3');
     var xhr = new XMLHttpRequest();
     xhr.open('GET', 'myscheme://mypath');
     xhr.send();
