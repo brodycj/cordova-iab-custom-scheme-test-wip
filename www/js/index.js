@@ -41,7 +41,7 @@ var app = {
 
         console.log('Received Event: ' + id);
 
-        var myref = cordova.InAppBrowser.open('iabpage.html');
+        var myref = cordova.InAppBrowser.open('iabpage.html', '_blank');
 
         myref.addEventListener('loadstart', function(e) {
             console.log('received loadstart for URL: ' + e.url);
